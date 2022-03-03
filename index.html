@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/temperatura.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="fundo">
+      <h1 class="title">Conversor de Temperaturas</h1>
+
+      <div class="fah">
+        <fieldset class="form">
+          <legend class="legenda">Conversor de Fahrenheit para Celsius</legend>
+          <label for="fah" class="detalhe">Insira a temperatura em Fahrenheit:</label>
+          <input type="number" name="fahren" id="fahren" placeholder="F°" class="dados"/>
+          <br />
+          <button onclick="calcC()" class="btn" type="submit">Calcular</button>
+          <p class="text">A temperatura em Celsius é:</p>
+          <p class="result" id="resultadoC"></p>
+        </fieldset>
+      </div>
+      <div class="celsius">
+        <fieldset class="form">
+          <legend class="legenda">Conversor de Celsius para Fahrenheit</legend>
+          <label for="celsius" class="detalhe">Insira a temperatura em Celsius:</label>
+          <input type="number" name="celsius" id="celsius" placeholder="C°" class="dados" />
+          <br />
+          <button onclick="calcF()" class="btn" type="submit">Calcular</button>
+          <p class="text">A temperatura em Fahrenheit é:</p>
+          <p class="result" id="resultadoF"></p>
+        </fieldset>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
